@@ -32,7 +32,7 @@ namespace :db do
 end
 
 #We'll define a task that starts up the Pry console.
-#We'll make this task dependent on our environment task 
+#We'll make this task dependent on our environment task
 #so that the Student class and the database connection load first.
 desc 'drop into the Pry console'
 task :console => :environment do
