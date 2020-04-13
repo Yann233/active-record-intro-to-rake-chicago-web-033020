@@ -11,6 +11,8 @@ desc 'outputs hello to the terminal'
   end
 end
 
+#We'll call this task migrate, because it is a convention to say
+#we are "migrating" our database by applying SQL statements that alter that database.
 namespace :db do
   desc 'migrate changes to your database'
   task :migrate => :environment do
