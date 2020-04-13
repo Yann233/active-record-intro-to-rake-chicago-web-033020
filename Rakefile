@@ -19,6 +19,11 @@ namespace :db do
     Student.create_table
   end
 
+  task :environment do
+    require_relative './config/environment'
+  end
+#We define a rake task that executes the code in this file.
+#This task will also be namespaced under db
   desc 'seed the database with some dummy data'
   task :seed do
     require_relative './db/seeds.rb'
@@ -26,9 +31,7 @@ namespace :db do
 
 end
 
-task :environment do
-  require_relative './config/environment'
-end
+
 
 desc 'drop into the Pry console'
 task :console => :environment do
