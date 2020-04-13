@@ -1,3 +1,4 @@
+#Now, let's namespace both hello and hola under the greeting heading:
 namespace :greeting do
 desc 'outputs hello to the terminal'
   task :hello do
